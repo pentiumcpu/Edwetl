@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C4A721C-C814-4BC5-A9FB-C9D709C9E6F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Edwetl</RootNamespace>
+    <AssemblyName>Edwetl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.dhcc.com.cn</SupportUrl>
+    <ProductName>ETL初始化</ProductName>
+    <PublisherName>东华软件</PublisherName>
+    <SuiteName>EDWETL</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2421F1B02138C3CD99FF6C510472EDAB4A9FA93A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Edwetl_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>setup.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\Office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Teradata.Client.Provider, Version=14.11.0.1, Culture=neutral, PublicKeyToken=76b417ee2e04956c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Teradata\NET Data Provider for Teradata\14.11\bin\Teradata.Client.Provider.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerlapp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerlapp.Designer.cs">
+      <DependentUpon>FormPerlapp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Crm_Model.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Crm_Model.Designer.cs">
+      <DependentUpon>Form_Crm_Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_jksql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_jksql.Designer.cs">
+      <DependentUpon>Form_jksql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ywtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ywtj.Designer.cs">
+      <DependentUpon>Form_ywtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_zysj_excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_zysj_excel.Designer.cs">
+      <DependentUpon>Form_zysj_excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_detail.Designer.cs">
+      <DependentUpon>show_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\common\dbcommon.cs" />
+    <Compile Include="src\common\jgjc.cs" />
+    <Compile Include="ddgl_ddck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ddgl_ddck.Designer.cs">
+      <DependentUpon>ddgl_ddck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Xqgl_Jgjc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Xqgl_Jgjc.Designer.cs">
+      <DependentUpon>Form_Xqgl_Jgjc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opexcel.cs" />
+    <Compile Include="oporacle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\common\perlstr.cs" />
+    <Compile Include="src\common\ResultHelper.cs" />
+    <Compile Include="src\dao\etl_tab_mapping_defDAO.cs" />
+    <Compile Include="src\dao\procedures_DAO.cs" />
+    <Compile Include="src\dao\etl_tab_mapping_def_tdDAO.cs" />
+    <Compile Include="src\model\Crm_model.cs" />
+    <Compile Include="src\model\deal.cs" />
+    <Compile Include="src\model\etla_excel.cs" />
+    <Compile Include="src\model\etl_tab_mapping_def.cs" />
+    <Compile Include="src\model\procedures.cs" />
+    <Compile Include="src\model\zysj_excel.cs" />
+    <Compile Include="src\model\sxt_excel.cs" />
+    <Compile Include="TD_2_Orcl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TD_2_Orcl.Designer.cs">
+      <DependentUpon>TD_2_Orcl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="td_to_orcl.cs" />
+    <Compile Include="teradata.cs" />
+    <Compile Include="ddgl_ddck_TD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ddgl_ddck_TD.Designer.cs">
+      <DependentUpon>ddgl_ddck_TD.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ddgl_ddck.resx">
+      <DependentUpon>ddgl_ddck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerlapp.resx">
+      <DependentUpon>FormPerlapp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Crm_Model.resx">
+      <DependentUpon>Form_Crm_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_jksql.resx">
+      <DependentUpon>Form_jksql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Xqgl_Jgjc.resx">
+      <DependentUpon>Form_Xqgl_Jgjc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ywtj.resx">
+      <DependentUpon>Form_ywtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_zysj_excel.resx">
+      <DependentUpon>Form_zysj_excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="show_detail.resx">
+      <DependentUpon>show_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TD_2_Orcl.resx">
+      <DependentUpon>TD_2_Orcl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ddgl_ddck_TD.resx">
+      <DependentUpon>ddgl_ddck_TD.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Teradata.Client.Provider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Teradata.Net.Security.Tdgss">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="setup.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

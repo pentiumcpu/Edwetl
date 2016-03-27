@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edwetl", "Edwetl\Edwetl.csproj", "{9C4A721C-C814-4BC5-A9FB-C9D709C9E6F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C4A721C-C814-4BC5-A9FB-C9D709C9E6F6}.Debug|x86.ActiveCfg = Release|x86
+		{9C4A721C-C814-4BC5-A9FB-C9D709C9E6F6}.Debug|x86.Build.0 = Release|x86
+		{9C4A721C-C814-4BC5-A9FB-C9D709C9E6F6}.Release|x86.ActiveCfg = Release|x86
+		{9C4A721C-C814-4BC5-A9FB-C9D709C9E6F6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

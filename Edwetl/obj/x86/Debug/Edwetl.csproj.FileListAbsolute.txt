@@ -1,0 +1,13 @@
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\Edwetl.csproj.ResolveComReference.cache
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\Edwetl.Form1.resources
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\Edwetl.Properties.Resources.resources
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\vss\Edwetl\Edwetl\bin\Debug\Edwetl.exe
+C:\vss\Edwetl\Edwetl\bin\Debug\Edwetl.pdb
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\Edwetl.exe
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\Edwetl.pdb
+C:\vss\Edwetl\Edwetl\bin\Debug\Edwetl.exe.config
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\ResGen.read.1.tlog
+C:\vss\Edwetl\Edwetl\obj\x86\Debug\ResGen.write.1.tlog
